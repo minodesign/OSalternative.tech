@@ -1,0 +1,457 @@
+/*
+Theme Name: Swipenokia 	
+Theme URL: 
+Description: Tema ad hoc per Swipenokia.com  
+Author: Minodesign / Giovanni Minelli
+Tags: inserite tag a vostro piacimento
+License: @2019 Minodesign / Giovanni Minelli - All right reserved
+Version: 0.2 - Early 2019
+*/ 
+
+/* -----------------------------------------------------------
+
+	Reset
+	
+----------------------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, 
+hgroup, menu, nav, section, menu,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+
+article, aside, figure, footer, header, 
+hgroup, nav, section,time { display:block; }
+
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+/* END RESET CSS */
+/* font flickring fix for firefox */
+
+.loading{opacity:0;}
+
+
+@font-face {
+	font-family: 'NokiaPure_Headline_UltraLight';
+    src: local('NokiaPureHeadline-UltraLight');
+    src: url('/fonts/nokiapureheadline_ultralight-webfont.eot'), format('embedded-opentype'),
+         url('/fonts/nokiapureheadline_ultralight-webfont.woff') format('woff'),
+		 url('fonts/nokiapureheadline_ultralight-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nokia Pure Headline';
+    src: local('NokiaPureHeadline-Bold');
+    src: url('/fonts/nokiapureheadlinebd-webfont.eot') format('embedded-opentype'),
+         url('/fonts/nokiapureheadlinebd-webfont.woff') format('woff'),
+         url('/fonts/nokiapureheadlinebd-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueHeavy';
+    src: url('/wp-content/themes/minodesign_studio/assets/CSS/fonts/Helvetica-heavy.eot?#iefix');
+    src: url('/wp-content/themes/minodesign_studio/assets/CSS/fonts/Helvetica-heavy.eot#iefix') format("eot"),
+    url('/wp-content/themes/minodesign_studio/assets/CSS/fonts/Helvetica-heavy.woff2') format("woff2"),
+    url('/wp-content/themes/minodesign_studio/assets/CSS/fonts/Helvetica-heavy.woff') format("woff"), 
+    url('/wp-content/themes/minodesign_studio/assets/CSS/fonts/Helvetica-heavy.ttf') format("truetype")
+}
+
+@font-face {
+  font-family: 'HelveticaThin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('HelveticaNeueLTStd-Th'), url('/fonts/HelveticaNeueLTStd-Th.otf') format('otf');
+  src: url('fonts/HelveticaNeueLTStd-Th.otf?#iefix') format('embedded-opentype'),
+     url('fonts/HelveticaNeueLTStd-Th.woff') format('woff'),
+     url('fonts/HelveticaNeueLTStd-Th.ttf') format('truetype'),
+}
+ 
+  
+@font-face {
+    font-family: 'Nokia_Pure_Headline_Light';
+    src: local('NokiaPureHeadline-Light'), url('fonts/nokiapureheadlinelt-webfont.ttf') format('truetype');
+    src: url('fonts/nokiapureheadlinelt-webfont.eot') format('eot'),     
+         url('fonts/nokiapureheadlinelt-webfont.woff') format('woff'),
+		 url('fonts/nokiapureheadlinelt-webfont.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+html{
+	margin-top: 0px;
+/* 	font-size: 10px; */
+}
+body{
+    background-color: #EFEFEF !important;
+    font-family: HelveticaNeue, Helvetica Neue, Helvetica, 'Roboto', arial, sans-serif;
+	font-size: 10px;
+	color: black;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	width: 100%
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+/* ----------------------Tipografia------------------ */
+h1{
+	font-family: 'Nokia_Pure_Headline_Light' !important;
+	font-size: 4em;
+	text-align: center;
+}
+h2{
+	font-family: "Nokia Pure Headline" , helvetica;
+	font-size: 36px;
+    letter-spacing: -1px;
+    line-height: 40px;
+    font-weight: bold;
+}
+h3{
+	font-family: "Nokia Pure Headline" , "HelveticaNeue-Bold", HelveticaNeue, Helvetica, 'Roboto', arial, sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+h4{
+    font-size: 14px;
+    font-family: 'NokiaPureTextBold', Arial;
+    margin-bottom: 0;
+    color: gray;
+}
+p{
+	font-size: 18px;
+	line-height: 25px;
+    font-family: 'Nokia_Pure_Headline_Light' , arial, verdana;
+	font-weight: 300;
+	margin-top: 0px;
+	color: #333;
+}
+small{
+	font-size: 13px;
+}
+ul, ol{
+	font-size: initial;
+	line-height: inherit;
+}
+li{
+	margin-bottom: 5px;
+}
+li h3{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: NokiaPureHeadlineBold, Arial;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+em{
+	font-weight: normal;
+}
+strong{
+	font-weight: 600;	
+}
+/* -----links----- */
+a{
+	outline: none;
+	color: #014592;
+	text-decoration: initial;
+}
+a:hover, a:focus{
+	text-decoration: underline;
+}
+a.cta, .wpcf7-submit{
+	font-family: 'NokiaPure_Headline_Bold', 'NokiaPureHeadline-Bold', 'Nokia Pure Text', Helvetica Neue Bold, HelveticaNeue, Helvetica, 'Roboto', arial, sans-serif;
+	font-weight: bold;
+	padding: 4px 10px;
+	margin: 1em auto 0px;
+	text-decoration: none;
+	border-radius: 10px;
+	background-color: #014592;
+	color: white;
+	text-align: center;
+	display: block;
+}
+a.cta:hover{
+	 transition: all 0.4s;
+	 transform: scale(0.98);
+}
+a#top{
+	display: inline-block;
+	float: right;
+	font-size: 1em;	
+}
+a img{
+	transform: scale(1);
+	transition: all 0.3s ease-out;
+
+	}
+a img:hover{
+	transform: scale(0.95);
+}
+footer {
+	background-color: #014592;
+	color: white;
+	min-height: 85px;
+	padding: 10px 40px 10px 2em;
+	z-index: 1234;
+	position: relative;
+}
+footer a, footer strong, footer p{
+	color: white;
+}
+nav{
+	position: absolute;
+	width: 100%;
+	z-index: 123456789;
+}
+#marchio{
+	min-width: 400px;
+	height: 0;
+	position: fixed;
+	left: 3em;
+	top: 2.5em;
+}
+.img-responsive, img.fullscreen{
+	width: 100% !important;
+}
+img#logotipo{
+	display: none;
+}
+.icon{
+	margin-right: 2.9em;
+	vertical-align: middle;
+	display: inline-block;
+}
+article{
+	margin-bottom: 2em;
+}
+/* ---------Griglia------- */
+section{
+	margin-right: 0px;
+	padding: 0em 25px; 
+	min-height: 300px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+section.fondobianco{
+	background-color: white;
+}
+section.ombrettina{
+	background-image: url('/wp-content/themes/swipenokia/assets/images/ombrettina.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	padding-top: 4em;
+}
+.spaziato{
+	margin-top: 150px;
+}
+section:first-of-type{
+	position: relative;
+}
+.colonna{
+	display: inline-block;
+	margin-right: 1%;
+	vertical-align: top;
+}
+.unquinto{
+	width: 18%;
+}
+.unquarto{
+	width: 23.6%;
+}
+.unterzo{
+	width: 31.7%;
+}
+.unterzoXS{
+	width: 31.7% !important;
+	display: inline-block;
+}
+.unmezzo{
+	width: 48.5%;
+}
+.iconasinistra{
+	float: left;
+	margin-right: 4px;
+}
+section#ouverture{
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 500px;
+	min-height: 550px;
+	padding: 1px;
+}
+.home #ouverture{
+	background-image: url('/wp-content/uploads/2019/05/n9_home.jpg');
+	background-size: contain;
+	min-height: 400px;	
+}
+.page-id-10 section#ouverture{
+	background-image: url('/wp-content/uploads/2019/05/design-ouverture.jpg');
+}
+/* features */
+.page-id-12 section#ouverture{
+	background-image: url('/wp-content/uploads/2019/05/n9_home.jpg');
+	background-size: 600px;
+	min-height: 450px;	
+}
+/* Accessories */
+.page-id-32 section#ouverture{
+	background-image: url('/wp-content/uploads/2019/05/NokiaN9_NFC_accessories.jpg');
+	background-size: 450px;
+	min-height: 550px;
+}
+/* Apps */
+.page-id-14 section#ouverture{
+	background-image: url('/wp-content/uploads/2019/05/apps_featured.jpg');
+	background-size: 680px;
+	min-height: 450px;
+}
+section#ouverture h1 {
+	color: #014592;
+	font-family: "NokiaPure_Headline_UltraLight";
+	font-size: 10em;
+	/* position: relative; */
+	text-align: left;
+	margin: 100px 0px 18px 0px;
+	vertical-align: bottom;
+	line-height: 1em;
+}
+.pitch{
+	text-align: center;
+	margin-bottom: 2em;
+}
+h1.pitch, .pitch p{
+/* 	font-size: 32px; */
+	font-weight: 200;
+	letter-spacing: 0.64px;
+	text-align: center;
+}
+
+/* 	---------------contatti---------------- */
+/*
+.wpcf7-text, .wpcf7-textarea{
+	background-color: transparent;
+	border: 1px solid black;
+	box-shadow: none;
+	padding: 0.4em 0.7em;
+	font-family: monospace;
+	max-width: 93% !important;
+	min-height: 2.5em;
+	font-size: 1em;
+}
+.wpcf7-text:focus,.wpcf7-textarea:focus{
+	color: black; 
+	border-color: black;
+}
+.wpcf7-submit{
+	font-family: 'NokiaPure_Headline_Bold', 'NokiaPureHeadline-Bold', 'Nokia Pure Text', Helvetica Neue Bold, HelveticaNeue, Helvetica, 'Roboto', arial, sans-serif;
+	font-weight: bold;
+	display: block;
+	padding: 10px 8px;
+	margin: 0;
+	text-decoration: none;
+	border: none;
+	border-radius: 100px;
+	background-color: #6cc04a;
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+	width: 100%;
+}
+.wpcf7-submit:hover {
+    background-color: black;
+	transition: all 0.4s;
+	transform: scale(0.98); 
+}
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0em;
+}
+div.wpcf7-response-output {
+	padding: 0.2em 1em;
+	font-size: 1.5em;
+}
+span.wpcf7-not-valid-tip {
+    background-color: #f00;
+    display: inline-block;
+    color: white;
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+}
+*/
+
+
+/* Sotto 768 px SMARTPHONES, TABLETS/PHABLETS*/
+@media only screen and (max-width: 768px){	
+	.unquinto, .unquarto{
+		width: 48%;
+	}
+
+}
+
+    
+/* Sotto 450 px ONLYSMARTPHONES */
+@media only screen and (max-width: 470px){
+	.colonna{
+		display: block;
+		margin-right: 0;
+	}
+	.unquinto, .unquarto, .unterzo , .unmezzo{
+		width: 100%;
+	}
+	section#ouverture {
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: contain;
+		min-height: 550px;
+		padding: 1px;
+	}
+	.page-id-14 section#ouverture{
+		background-size: contain;
+	}	
+}
+
+
+/* Oltre 1068 px mediaquery derivazione apple*/
+@media only screen and (min-width: 1068px){
+	
+}
+
+
+
+
+
+
+
+
+
